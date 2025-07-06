@@ -17,9 +17,27 @@ Data from 2021.
 - [ ] For missing `country` values:
     - [ ] Identify rows where director information is present
     - [ ] Use DAX to infer country based on director’s known country in other entries
-    - [ ] Calculate and create a new column with inferred country values
+    - [ ] Calculate and create a new column with inferred country values   
+          `=IF(
+	ISBLANK(netflix_cleaned[country]) || netflix_cleaned[country] = "" || netflix_cleaned[country] = " ",
+	VAR country_fill = 
+	CALCULATE(
+		MAX(netflix_cleaned[country]),
+		FILTER(netflix_cleaned,
+			netflix_cleaned[director] = EARLIER(netflix_cleaned[director]) && 
+			NOT(ISBLANK(netflix_cleaned[country])) && netflix_cleaned[country] <> "" && netflix_cleaned[country] <> " " && netflix_cleaned[country] <> "NA"
+			 && NOT(ISBLANK(netflix_cleaned[director])) && netflix_cleaned[director] <> "NA"
+			)
+		)
+		RETURN IF(ISBLANK(country_fill), "NA", country_fill)
+		, netflix_cleaned[country]
+	)`
+     ![image](https://github.com/user-attachments/assets/fe72a12d-805a-49f9-89fa-6f1ba117f971)
+
 - [ ] Address any remaining blank spaces in the `country` column after trimming
-- [ ] List the top 10 countries represented in the Netflix dataset
+- [ ] List the top 10 countries represented in the Netflix dataset   
+      ![image](https://github.com/user-attachments/assets/f23cca6d-6bdd-4fa4-9a7f-f8659244397e)
+
 - [ ] Confirm that the data is cleaned and ready for further analysis
 
 # CONCLUSION
