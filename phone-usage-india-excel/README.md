@@ -36,8 +36,6 @@ Size - 17000 rows and 16 columns
       ![image](https://github.com/user-attachments/assets/16eb6b2f-d00c-4ee3-968c-139a9cbb6725)
 
 # CONCLUSION
-## 📋 Key Findings Checklist
-
 ### Usage & Spending Patterns
 - [ ] Noted that individuals aged 58 exhibit the highest phone usage and spending metrics
 - [ ] Identified that individuals aged 43 show the lowest engagement
