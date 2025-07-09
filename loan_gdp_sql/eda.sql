@@ -104,3 +104,19 @@ LEFT JOIN ida_loans_latest ida
 WHERE cy.country LIKE '%India%'
 GROUP BY cy.country, cy.year, gdp.gdp
 ORDER BY cy.year
+.
+------------------------------------------------------------------------------------
+.
+--YoY GDP change
+SELECT 
+	country,
+	year,
+	COALESCE(gdp,0) AS current_year_gdp,
+	--previous year gdp
+	COALESCE(LAG(gdp) OVER (PARTITION BY country ORDER BY year),0) AS previous_year_gdp,
+	--YoY gdp change amount
+	COALESCE(gdp - LAG(gdp) OVER (PARTITION BY country ORDER BY year), 0) AS yoy_amount,
+	--YoY change percent
+	COALESCE(ROUND((gdp - LAG(gdp) OVER (PARTITION BY country ORDER BY year)) / LAG(gdp) OVER (PARTITION BY country ORDER BY year),5), 0) AS yoy_percent
+FROM gdp_data
+WHERE country = 'India'
