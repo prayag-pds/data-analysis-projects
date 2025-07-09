@@ -36,7 +36,7 @@ country_years AS (
 	year
 	FROM all_years
 ),
-yearly_loans AS (
+all_loans AS (
 	SELECT 
 		cy.country,
 		cy.year,
@@ -57,7 +57,7 @@ SELECT
 	year,
 	total_loans AS current_year_loans,
 	LAG(total_loans) OVER ( PARTITION BY country ORDER BY year) AS previous_year_loans,
-	--year on year (absolute)
+	--year on year amount
 	LAG(total_loans) OVER ( PARTITION BY country ORDER BY year) - total_loans AS yoy_change_amount,
 	--yoy percent
 	CASE
@@ -65,7 +65,7 @@ SELECT
 			THEN NULL
 		ELSE ROUND((LAG(total_loans) OVER ( PARTITION BY country ORDER BY year) - total_loans) / LAG(total_loans) OVER ( PARTITION BY country ORDER BY year), 5)
 		END AS yoy_change_percent 
-FROM yearly_loans
+FROM all_loans
 ORDER BY country, year
 .
 ------------------------------------------------------------------------------------
