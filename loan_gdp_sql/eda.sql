@@ -23,6 +23,15 @@ GROUP BY ibrd.country, ig.gdp, ig.year
 ORDER BY due_vs_gdp DESC
 LIMIT 10
 .
+.
+--projects with most amount of loans
+SELECT year, project_name, SUM(original_amount_usd) AS total_amount
+FROM ibrd_loans_latest
+WHERE country = 'Ukraine'
+GROUP BY year, project_name
+ORDER BY total_amount DESC
+LIMIT 5
+.
 ------------------------------------------------------------------------------------
 .
 --year on year percent change
