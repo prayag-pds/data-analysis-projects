@@ -11,6 +11,7 @@ Tool Used – Excel
 3.	Data Preparation
 4.	Exploratory Data Analysis
 5.	Conclusion
+6. Recommendation 
 
 ## INTRODUCTION-  
 This project analyses the monthly stock data of liquor for the period from April 2021 to March 2024, aligning with the fiscal year that begins in April. The objective is to identify patterns in demand fluctuations, particularly periods of increase or decrease. So that stakeholders can better anticipate and prepare for potential changes in supply requirements.
