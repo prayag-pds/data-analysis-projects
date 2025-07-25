@@ -16,23 +16,22 @@ Size - 40000+
 - [ ] Resolved initial visualization challenges caused by gaps in the date range by creating a “Date Lookup” table using DAX and establishing a relationship with the original Crime table for continuous date representation.   
 - [ ] Developed several DAX measures, including:
   - [ ] Total crimes committed
-  - [ ] Last month’s crimes
-  - [ ] Month-on-month crime percentage change
   - [ ] Unsolved crimes
   - [ ] Unsolved crime percentage
   - [ ] All crimes
-- [ ] Enabled comprehensive and dynamic reporting of crime trends and resolution rates.
+  - [ ] Case Duration in Days(Calculated Column)
+  - [ ] Average Days taken to Solve
+  - [ ] Average Police Deployed
 # CONCLUSION-
 - [ ] Analyzed a total of 40,160 crimes, with nearly 50.04% of cases remaining unsolved.
 - [ ] Arson was the most frequently reported offence.
 - [ ] Females were the most affected gender (55.83% of victims), followed by males (33.38%) and other gender identities (10.79%).
 - [ ] Ages 22 and 26 were equally the most impacted.
 - [ ] While arson had the highest individual numbers, violent crimes collectively surpassed fire-related incidents; traffic fatalities were the lowest among major categories.
-- [ ] Crime rates fluctuated throughout the years, peaking between February and August, with the highest monthly counts in February, April, and June (3,720 each), and the lowest in October and December (2,880 each).
-- [ ] The largest month-on-month increase occurred in January (25%), while August saw the largest decrease (-19.65%).
 - [ ] Delhi reported the highest total crimes (5,400), followed by Mumbai (4,415) and Bangalore (3,588).
 - [ ] Most cities had an unsolved crime rate close to 50%, with Delhi slightly higher at 51%, and Bangalore and Chennai just above 50%.
-- [ ] In all top cities, solved crimes remained fewer than half of the total, highlighting persistent challenges in crime resolution.  
-![crime_india_pbi](https://github.com/user-attachments/assets/6c772edd-e3b9-45f1-a685-2144504637e7)
+- [ ] In all top cities, solved crimes remained fewer than half of the total, highlighting persistent challenges in crime resolution.
+- [ ] Police deployment averages 10 officers across crimes, yet case resolution varies greatly, up to 450 days for homicide and sexual assault, but about 50 days for others, indicating resolution depends on crime type, not the number of officers deployed.
 
+<img width="2767" height="1600" alt="crime_india_pbi_copy" src="https://github.com/user-attachments/assets/9808add1-1142-476e-882c-874f993250f8" />
 
