@@ -31,7 +31,8 @@ Size - 40000+
 - [ ] Delhi reported the highest total crimes (5,400), followed by Mumbai (4,415) and Bangalore (3,588).
 - [ ] Most cities had an unsolved crime rate close to 50%, with Delhi slightly higher at 51%, and Bangalore and Chennai just above 50%.
 - [ ] In all top cities, solved crimes remained fewer than half of the total, highlighting persistent challenges in crime resolution.
-- [ ] Police deployment averages 10 officers across crimes, yet case resolution varies greatly, up to 450 days for homicide and sexual assault, but about 50 days for others, indicating resolution depends on crime type, not the number of officers deployed.
+- [ ] Police deployment averages 10 officers across crimes. Yet, case resolution varies greatly, up to 450 days for homicide and sexual assault, but about 50 days for others, indicating resolution depends on crime type, not the number of officers deployed.
+- [ ] 
+<img width="1286" height="727" alt="Screenshot 2025-07-25 215412" src="https://github.com/user-attachments/assets/6448a25a-a9a3-46a5-802c-ea4c6f8b2052" />
 
-<img width="2767" height="1600" alt="crime_india_pbi_copy" src="https://github.com/user-attachments/assets/9808add1-1142-476e-882c-874f993250f8" />
 
