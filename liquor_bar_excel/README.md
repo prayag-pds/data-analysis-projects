@@ -17,7 +17,7 @@ Tool Used – Excel
 This project analyses the monthly stock data of liquor for the period from April 2021 to March 2024, aligning with the fiscal year that begins in April. The objective is to identify patterns in demand fluctuations, particularly periods of increase or decrease. So that stakeholders can better anticipate and prepare for potential changes in supply requirements.
 
 ## DATA DESCRIPTION-
-- [ ] Source: Independently collected data 
+- [ ] Source: Independently collected data (xlsx file Attached above). Some sensitive data have been removed
 - [ ] Time Frame: April 2021 – March 2024
 - [ ] Size: 520 Rows & 11 Columns
 - [ ] Variables: Date, Invoice no., Opening Balance, Credit Amount, **BL**, **LPL**, Sale amount, VAT(Tax), TCS(tax), Grand Total, Closing Balance.    
